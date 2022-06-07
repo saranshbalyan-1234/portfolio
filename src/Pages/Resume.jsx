@@ -41,7 +41,7 @@ export default function Resume() {
           </div>
           <div class="desc">
             <p>
-              Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum
+              Lorem ipsum dolor ssit amet, in quodsi vulputate pro. Ius illum
               vocent mediocritatem an, cule dicta iriure at. Ubique maluisset
               vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex
               audire suavitate has, ei quodsi tacimates sapientem sed, pri zril
