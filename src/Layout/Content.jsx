@@ -8,7 +8,7 @@ export default function Content() {
           <div class="vertical-center">
             <div class="started-content">
               <div class="h-title glitch-effect" data-text="I'm Saransh Balyan">
-                I'm <span>Saransh Balyan</span>
+                I'm <span>Saransh Balyan {`</>`}</span>
               </div>
               <div class="h-subtitle typing-subtitle">
                 <p style={{ fontSize: "20px" }}>React Js Developer</p>

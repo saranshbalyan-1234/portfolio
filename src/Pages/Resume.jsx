@@ -1,9 +1,8 @@
 import React from "react";
-import { DownCircleOutlined } from "@ant-design/icons";
+import { DownCircleOutlined, DownloadOutlined } from "@ant-design/icons";
 export default function Resume() {
   return (
     <div class="wrapper">
-      {/* <!-- Started --> */}
       <div class="section started" style={{ minHeight: "90vh" }}>
         <div class="centrize full-width">
           <div class="vertical-center">
@@ -21,7 +20,13 @@ export default function Resume() {
             </div>
           </div>
         </div>
-        <a href="#" class="mouse_btn" style={{ marginTop: "200px" }}>
+        <a
+          href={() => {
+            return false;
+          }}
+          class="mouse_btn"
+          // style={{ marginTop: "200px" }}
+        >
           <span class="ion ">
             <DownCircleOutlined />
           </span>
@@ -72,7 +77,7 @@ export default function Resume() {
             </div>
             <div class="bts">
               <a href="#" class="btn fill" data-text="Download CV">
-                Download CV
+                <DownloadOutlined /> Download CV
               </a>
             </div>
           </div>

@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
+import {
+  FormOutlined,
+  AppstoreAddOutlined,
+  SnippetsOutlined,
+} from "@ant-design/icons";
 export default function Header() {
   const [active, setActive] = useState(false);
   return (
@@ -19,26 +24,17 @@ export default function Header() {
         </a>
         <div class="top-menu">
           <ul>
-            <li>
-              <a href="resume.html" class="lnk">
-                Resume
-              </a>
-            </li>
-            <li>
-              <a href="portfolio.html" class="lnk">
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a href="blog.html" class="lnk">
-                Blog
-              </a>
-            </li>
-            <li>
-              <a href="contacts.html" class="btn">
-                Contacts
-              </a>
-            </li>
+            <Link to="/resume" class="btn">
+              <FormOutlined /> Resume
+            </Link>
+
+            <Link to="/portfolio" class="btn">
+              <AppstoreAddOutlined /> Portfolio
+            </Link>
+
+            <Link to="/blog" class="btn">
+              <SnippetsOutlined /> Blog
+            </Link>
           </ul>
         </div>
       </div>

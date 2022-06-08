@@ -33,3 +33,22 @@
 .typed-cursor {
   font-size: 20px;
 }
+.handleIcon {
+  color: black;
+}
+.handleIcon:hover {
+  color: #f26b38;
+}
+.ant-card {
+  transition: 300ms linear;
+}
+.ant-card:hover {
+  background-color: #f26b38;
+  color: white;
+}
+.ant-card:hover .ant-card-meta-title h3 {
+  color: white;
+}
+.ant-card:hover .ant-card-meta-description p {
+  color: white;
+}

@@ -12,22 +12,22 @@ export default function Footer() {
     <footer>
       <div class="soc">
         <a target="_blank" href="https://dribbble.com/">
-          <GithubOutlined />
+          <GithubOutlined className="handleIcon" />
         </a>
         <a target="_blank" href="https://twitter.com/">
-          <InstagramOutlined />
+          <InstagramOutlined className="handleIcon" />
         </a>
         <a target="_blank" href="https://github.com/">
-          <FacebookOutlined />
+          <FacebookOutlined className="handleIcon" />
         </a>
         <a target="_blank" href="https://www.instagram.com/">
-          <PhoneOutlined />
+          <PhoneOutlined className="handleIcon" />
         </a>
         <a target="_blank" href="https://www.instagram.com/">
-          <MailOutlined />
+          <MailOutlined className="handleIcon" />
         </a>
         <a target="_blank" href="https://www.instagram.com/">
-          <WhatsAppOutlined />
+          <WhatsAppOutlined className="handleIcon" />
         </a>
       </div>
       <div class="copy">© 2022 Saransh Balyan. All rights reserved.</div>
