@@ -76,7 +76,12 @@ export default function Resume() {
               </ul>
             </div>
             <div class="bts">
-              <a href="#" class="btn fill" data-text="Download CV">
+              <a
+                href={"/Saransh's CV.pdf"}
+                download
+                class="btn fill"
+                data-text="Download CV"
+              >
                 <DownloadOutlined /> Download CV
               </a>
             </div>

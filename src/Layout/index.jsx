@@ -1,5 +1,6 @@
 import React from "react";
 import "antd/dist/antd.css";
+import { BackTop } from "antd";
 import Header from "./Header";
 import Footer from "./Footer";
 import PreLoader from "./PreLoader";
@@ -20,12 +21,16 @@ export default function Layout() {
           <Route exact path="/resume" element={<Resume />} />
           <Route exact path="/portfolio" element={<Portfolio />} />
         </Routes>
+
         <Footer />
         <div class="line top"></div>
         <div class="line bottom"></div>
         <div class="line left"></div>
         <div class="line right"></div>
       </div>
+      <BackTop
+        style={{ zIndex: 1000, marginBottom: "40px", marginRight: "-50px" }}
+      />
     </>
   );
 }
