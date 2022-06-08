@@ -20,13 +20,13 @@ export default function Footer() {
         <a target="_blank" href="https://github.com/">
           <FacebookOutlined className="handleIcon" />
         </a>
-        <a target="_blank" href="https://www.instagram.com/">
+        <a href="tel:+91-9999075909">
           <PhoneOutlined className="handleIcon" />
         </a>
-        <a target="_blank" href="https://www.instagram.com/">
+        <a href="mailto:saranshbalyan123@gmail.com">
           <MailOutlined className="handleIcon" />
         </a>
-        <a target="_blank" href="https://www.instagram.com/">
+        <a href="https://api.whatsapp.com/send?phone=919868598141">
           <WhatsAppOutlined className="handleIcon" />
         </a>
       </div>
