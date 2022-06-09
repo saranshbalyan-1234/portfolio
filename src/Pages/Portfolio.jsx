@@ -45,6 +45,7 @@ export default function Portfolio() {
             }}
           >
             <Card
+              className="handleHover"
               hoverable
               style={{ width: 300 }}
               onClick={() => {
