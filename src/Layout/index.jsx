@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "antd/dist/antd.css";
 import { BackTop } from "antd";
 import Header from "./Header";
@@ -10,9 +10,17 @@ import Resume from "../Pages/Resume";
 import Portfolio from "../Pages/Portfolio";
 
 export default function Layout() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    console.log("saransh", document.getElementsByTagName("body")[0]);
+    setTimeout(() => {
+      document.getElementsByTagName("body")[0].className = "loaded";
+      setLoading(false);
+    }, 800);
+  }, []);
   return (
     <>
-      <PreLoader />
+      {loading && <PreLoader />}
 
       <div class="container">
         <Header />
