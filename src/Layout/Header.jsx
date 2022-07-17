@@ -4,6 +4,7 @@ import {
   FormOutlined,
   AppstoreAddOutlined,
   SnippetsOutlined,
+  HomeOutlined,
 } from "@ant-design/icons";
 export default function Header() {
   const [active, setActive] = useState(false);
@@ -25,7 +26,7 @@ export default function Header() {
         <div class="top-menu">
           <ul>
             <a href="/" class="btn">
-              <FormOutlined /> Home
+              <HomeOutlined /> Home
             </a>
             <Link to="/resume" class="btn">
               <FormOutlined /> Resume

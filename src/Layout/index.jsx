@@ -8,11 +8,11 @@ import Content from "./Content";
 import { Routes, Route } from "react-router-dom";
 import Resume from "../Pages/Resume";
 import Portfolio from "../Pages/Portfolio";
-
+import Blog from "../Pages/Blog";
+import ChunkFiles from "../Pages/Blog/ChunkFiles";
 export default function Layout() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    console.log("saransh", document.getElementsByTagName("body")[0]);
     setTimeout(() => {
       document.getElementsByTagName("body")[0].className = "loaded";
       setLoading(false);
@@ -28,6 +28,8 @@ export default function Layout() {
           <Route exact path="/" element={<Content />} />
           <Route exact path="/resume" element={<Resume />} />
           <Route exact path="/portfolio" element={<Portfolio />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route exact path="/chunkFiles" element={<ChunkFiles />} />
         </Routes>
 
         <Footer />

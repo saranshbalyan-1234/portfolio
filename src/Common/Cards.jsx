@@ -1,14 +1,14 @@
 import React from "react";
 import { Card } from "antd";
 import { AlertOutlined } from "@ant-design/icons";
-export default function Cards({ description, link, title }) {
+export default function Cards({ description, link, title, width }) {
   const { Meta } = Card;
 
   return (
     <Card
       className="handleHover"
       hoverable
-      style={{ width: 400 }}
+      style={{ width: width }}
       onClick={() => {
         window.open(link);
       }}

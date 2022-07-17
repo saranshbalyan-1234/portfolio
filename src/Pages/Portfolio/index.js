@@ -1,6 +1,6 @@
 import React from "react";
 import { DownCircleOutlined } from "@ant-design/icons";
-import Cards from "./Cards";
+import Cards from "../../Common/Cards";
 
 export default function Portfolio() {
   return (
@@ -44,6 +44,7 @@ export default function Portfolio() {
             }}
           >
             <Cards
+              width={400}
               title="Advanced Swagger"
               description={
                 <p>
@@ -55,6 +56,7 @@ export default function Portfolio() {
               link="https://rcswagger.herokuapp.com"
             />
             <Cards
+              width={400}
               title="Better Quality Automation"
               description={
                 <p>
@@ -68,6 +70,7 @@ export default function Portfolio() {
             />
 
             <Cards
+              width={400}
               title="Rc TeamBuilder"
               description={
                 <p>
@@ -81,6 +84,7 @@ export default function Portfolio() {
               link="https://rcteambuilder.com"
             />
             <Cards
+              width={400}
               title="Blood Bank"
               description={
                 <p>
