@@ -23,7 +23,7 @@ $(function () {
   });
 
   /* Preloader */
-  $(window).load(function () {
+  $(window).onload(function () {
     $(".preloader .pre-inner").fadeOut(800, function () {
       /* Preload hide */
       $(".preloader").fadeOut();
