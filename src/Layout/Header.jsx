@@ -24,6 +24,9 @@ export default function Header() {
         </a>
         <div class="top-menu">
           <ul>
+            <a href="/" class="btn">
+              <FormOutlined /> Home
+            </a>
             <Link to="/resume" class="btn">
               <FormOutlined /> Resume
             </Link>

@@ -1,10 +1,13 @@
 import React from "react";
-import { DownCircleOutlined, ProfileOutlined } from "@ant-design/icons";
-
+import {
+  DownCircleOutlined,
+  ProfileOutlined,
+  ClockCircleOutlined,
+} from "@ant-design/icons";
 import AboutMe from "./AboutMe";
 import Experience from "./Experience";
 import Education from "./Education";
-import { Progress } from "antd";
+import { Progress, Timeline, Tag } from "antd";
 export default function Resume() {
   return (
     <div class="wrapper">
@@ -17,8 +20,7 @@ export default function Resume() {
               </div>
               <div class="h-subtitle typing-bread">
                 <p>
-                  <a href="index.html">Home</a> /{" "}
-                  <a href="resume.html">Resume</a>
+                  <a href="/">Home</a> / <a href="#">Resume</a>
                 </p>
               </div>
               <span class="typed-bread"></span>
@@ -182,152 +184,60 @@ export default function Resume() {
         </div>
       </div>
 
-      {/* <!-- Service --> */}
-      <div class="section service">
-        <div class="content">
-          <div class="title">
-            <div class="title_inner">My Services</div>
-          </div>
-          <div class="service-items">
-            <div class="service-item">
-              <div class="icon">
-                <span class="ion ion-social-html5"></span>
-              </div>
-              <div class="name">Front-end</div>
-              <p>Morbi nulla arcu, pellentesque sed egestas in.</p>
-            </div>
-            <div class="service-item">
-              <div class="icon">
-                <span class="ion ion-ipad"></span>
-              </div>
-              <div class="name">Mobile Application</div>
-              <p>Morbi nulla arcu, pellentesque sed egestas in.</p>
-            </div>
-            <div class="service-item">
-              <div class="icon">
-                <span class="ion ion-ios-search-strong"></span>
-              </div>
-              <div class="name">Investigation</div>
-              <p>Morbi nulla arcu, pellentesque sed egestas in.</p>
-            </div>
-            <div class="service-item">
-              <div class="icon">
-                <span class="ion ion-code"></span>
-              </div>
-              <div class="name">Programming</div>
-              <p>Morbi nulla arcu, pellentesque sed egestas in.</p>
-            </div>
-            <div class="service-item">
-              <div class="icon">
-                <span class="ion ion-help-buoy"></span>
-              </div>
-              <div class="name">Awesome Supports</div>
-              <p>Morbi nulla arcu, pellentesque sed egestas in.</p>
-            </div>
-            <div class="service-item">
-              <div class="icon">
-                <span class="ion ion-social-chrome"></span>
-              </div>
-              <div class="name">Web Development</div>
-              <p>Morbi nulla arcu, pellentesque sed egestas in.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* <!-- Clients --> */}
       <div class="section clients">
         <div class="content">
-          <div class="title">
-            <div class="title_inner">Clients</div>
+          <div style={{ display: "flex" }}>
+            {" "}
+            <h3>Projects</h3>
+            {/* <Tag color="magenta">Check Portfolio</Tag> */}
           </div>
-          <div class="box-items">
-            <div class="box-item">
-              <div class="image">
-                <a target="_blank" href="https://www.google.com">
-                  <img src="images/clients/client_1.png" alt="" />
-                  <span class="info">
-                    <span class="centrize full-width">
-                      <span class="vertical-center">
-                        <span class="ion ion-link"></span>
-                      </span>
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="box-item">
-              <div class="image">
-                <a target="_blank" href="https://www.google.com">
-                  <img src="images/clients/client_2.png" alt="" />
-                  <span class="info">
-                    <span class="centrize full-width">
-                      <span class="vertical-center">
-                        <span class="ion ion-link"></span>
-                      </span>
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="box-item">
-              <div class="image">
-                <a target="_blank" href="https://www.google.com">
-                  <img src="images/clients/client_3.png" alt="" />
-                  <span class="info">
-                    <span class="centrize full-width">
-                      <span class="vertical-center">
-                        <span class="ion ion-link"></span>
-                      </span>
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="box-item">
-              <div class="image">
-                <a target="_blank" href="https://www.google.com">
-                  <img src="images/clients/client_1.png" alt="" />
-                  <span class="info">
-                    <span class="centrize full-width">
-                      <span class="vertical-center">
-                        <span class="ion ion-link"></span>
-                      </span>
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="box-item">
-              <div class="image">
-                <a target="_blank" href="https://www.google.com">
-                  <img src="images/clients/client_2.png" alt="" />
-                  <span class="info">
-                    <span class="centrize full-width">
-                      <span class="vertical-center">
-                        <span class="ion ion-link"></span>
-                      </span>
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="box-item">
-              <div class="image">
-                <a target="_blank" href="https://www.google.com">
-                  <img src="images/clients/client_3.png" alt="" />
-                  <span class="info">
-                    <span class="centrize full-width">
-                      <span class="vertical-center">
-                        <span class="ion ion-link"></span>
-                      </span>
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="clear"></div>
+          <Timeline>
+            <Timeline.Item
+              dot={<ClockCircleOutlined style={{ fontSize: "16px" }} />}
+            >
+              Project: Better Quality Automation Project
+              <br />
+              Technology Used: Selemium, Spring and React Js
+              <br />
+              Organization: KDIT Solutions <br />
+              Website:{" "}
+              <a href="https://betterprocessquality.com">
+                Better Process Quality
+              </a>
+            </Timeline.Item>
+            <Timeline.Item
+              dot={<ClockCircleOutlined style={{ fontSize: "16px" }} />}
+            >
+              Project: Advance Swagger
+              <br />
+              Technology Used: Laravel and React Js
+              <br />
+              Organization: Self <br />
+              Website:{" "}
+              <a href="https://rcwagger.herokuapp.com">Advance Swagger</a>
+            </Timeline.Item>
+
+            <Timeline.Item>
+              Project: RC TeamBuilder
+              <br />
+              Technology Used: Spring, Laravel, Node Js, React Js
+              <br />
+              Organization: Realcoderz <br />
+              Website: <a href="https://rcteambuilder.com">RC TeamBuilder</a>
+            </Timeline.Item>
+            <Timeline.Item>
+              Project: Blood Bank
+              <br />
+              Technology Used: Laravel and React Js
+              <br />
+              Organization: Realcoderz <br />
+              Website: <a href="https://lalindia.com">Lal India</a>
+            </Timeline.Item>
+            <Timeline.Item>
+              Attendace Manegment Using Geolocation <br />
+              Organization: Realcoderz
+            </Timeline.Item>
+          </Timeline>
         </div>
       </div>
     </div>
